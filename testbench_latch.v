@@ -29,10 +29,19 @@ module test_Latch;
 	D=1'b0;
 	#40
 	D=1'b1;
+	#40
+	D=1'b0;
+	#40
+	D=1'b1;
+	#40
+	D=1'b0;
+	#40
+	D=1'b1;
 
 	repeat(10)@(CK); // クロックが１０回立ち上がった後に下に進める
 	// クロックがどう立ち上がるかはalways beginで示されている
 	# 1000
-	$finish;// 全体として1000遅延で終わるという意味
+	$finish;
     end
 endmodule
+
