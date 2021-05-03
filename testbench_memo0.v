@@ -31,7 +31,7 @@ module testbench_memo0;
     // test scenario
 //    integer i;
     initial begin
-	we = 1;
+	we = 0;
 	addr = 0;
 //	for (i = 0; i < 10; i = i+1) begin
 //	   addr = addr +1;
